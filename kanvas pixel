@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanvas Piksel Indonesia</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        h1 { color: #333; }
+        .container { max-width: 1050px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        /* Area Kanvas 1000x1000 piksel */
+        #canvas-container { 
+            width: 1000px; height: 1000px; 
+            border: 2px solid #333; margin: 20px auto; 
+            position: relative; background-color: #fff;
+            background-image: linear-gradient(to right, #ccc 1px, transparent 1px), linear-gradient(to bottom, #ccc 1px, transparent 1px);
+            background-size: 10px 10px; /* Grid pembantu ukuran 10x10 */
+        }
+        .pixel-ad { position: absolute; display: block; }
+        .btn-beli { background-color: #25D366; color: white; padding: 15px 30px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px; font-weight: bold; }
+        .btn-beli:hover { background-color: #128C7E; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎨 Jual Kanvas 1000x1000 Piksel</h1>
+    <p>Beli 1 piksel hanya Rp1.000! Pajang gambarmu dan promosikan link-mu di sini selamanya.</p>
+    <p><strong>Cara Beli:</strong> Klik tombol hijau di bawah, kirim bukti bayar QRIS & gambarmu ke WhatsApp admin!</p>
+
+    <!-- AREA KANVAS UTAMA -->
+    <div id="canvas-container">
+        
+        <!-- CONTOH JIKA ADA YANG BELI (Kamu tinggal tambah baris di bawah ini nanti) -->
+        <!-- Misal: Beli di koordinat Kiri(X): 50px, Atas(Y): 100px dengan ukuran gambar 50x50 piksel -->
+        <a href="https://instagram.com" target="_blank" class="pixel-ad" style="left: 50px; top: 100px; width: 50px; height: 50px;" title="Iklan Toko Keren">
+            <img src="https://picsum.photos" width="50" height="50" alt="Iklan">
+        </a>
+        
+    </div>
+
+    <!-- TOMBOL WHATSAPP KAMU -->
+    <!-- Ganti Nomor HP di bawah dengan nomor HP kamu/orang tua, awali dengan 62 (bukan 0) -->
+    <a href="https://wa.me" target="_blank" class="btn-beli">
+        🛒 Beli Piksel via WhatsApp
+    </a>
+</div>
+
+</body>
+</html>
